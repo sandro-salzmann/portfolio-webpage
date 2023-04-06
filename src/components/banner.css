@@ -1,0 +1,21 @@
+.banner .icon {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 720px) {
+  .banner {
+    align-items: center;
+  }
+  .banner .icon {
+    max-height: 150px;
+    max-width: 150px;
+    margin-bottom: 16px;
+  }
+}
+
+.banner .icon img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}

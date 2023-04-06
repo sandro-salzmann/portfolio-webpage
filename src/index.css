@@ -1,0 +1,10 @@
+body {
+  font-family: var(--font-family);
+  margin: 0;
+}
+
+/* Make PrimeReact Galleria Prev and Next Icons usable on white backgrounds */
+.p-galleria-item-next:not(.p-disabled) .p-galleria-item-next-icon,
+.p-galleria-item-prev:not(.p-disabled) .p-galleria-item-prev-icon {
+  color: var(--primary-color);
+}
