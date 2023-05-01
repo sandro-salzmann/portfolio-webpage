@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--blue-600);
-  color: white;
+  color: var(--blue-lightest);
   border-radius: var(--border-radius);
   justify-content: center;
 }

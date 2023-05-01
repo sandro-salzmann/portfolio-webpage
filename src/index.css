@@ -1,6 +1,21 @@
 body {
   font-family: var(--font-family);
+  background-color: var(--blue-50);
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--blue-darkest);
+}
+
+:root {
+  --blue-darkest: hsl(217, 59%, 15%);
+  --blue-lightest: hsl(215, 100%, 96%);
 }
 
 /* Make PrimeReact Galleria Prev and Next Icons usable on white backgrounds */
