@@ -1,13 +1,14 @@
-import "./app.css";
+import './app.css';
 
-import React from "react";
+import React from 'react';
 
-import { Banner } from "./components/banner";
-import { Header } from "./components/header";
-import { Project } from "./components/project";
-import { Subtitle } from "./components/subtitle";
-import { useMediaQuery } from "./hooks/use-media-query";
-import { PROJECTS } from "./PROJECTS";
+import { Banner } from './components/banner';
+import { Footer } from './components/footer';
+import { Header } from './components/header';
+import { Project } from './components/project';
+import { Subtitle } from './components/subtitle';
+import { useMediaQuery } from './hooks/use-media-query';
+import { PROJECTS } from './PROJECTS';
 
 export const App = () => {
   const isTabletOrGreater = useMediaQuery("(min-width: 720px)");
@@ -25,6 +26,9 @@ export const App = () => {
         {PROJECTS.map((props) => (
           <Project {...props} />
         ))}
+      </div>
+      <div className="pl-4 pr-4 pb-4">
+        <Footer />
       </div>
     </div>
   );
