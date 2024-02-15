@@ -28,7 +28,7 @@ export const Header = ({ className }: HeaderProps) => {
   return (
     <header className={`flex gap-2 mt-4 ${className}`}>
       <Button
-        label={isTabletOrGreater ? "Download CV" : "CV"}
+        label={"CV"}
         icon="pi pi-file-pdf"
         iconPos="right"
         severity="info"
@@ -57,7 +57,7 @@ export const Header = ({ className }: HeaderProps) => {
         onClick={onLinkedInClick}
         className="bg-white"
       />
-      <Button label="Contact me" rounded onClick={onContactMeClick} />
+      <Button label="Contact me" icon="pi pi-at" rounded onClick={onContactMeClick} />
     </header>
   );
 };

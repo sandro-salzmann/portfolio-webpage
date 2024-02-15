@@ -1,7 +1,5 @@
 import "./banner.css";
 
-import React from "react";
-
 import { useMediaQuery } from "../hooks/use-media-query";
 
 type BannerProps = {
@@ -14,13 +12,13 @@ export const Banner = ({ className }: BannerProps) => {
   return (
     <div className={`banner flex ${className}`}>
       <div className="icon flex-none">
-        <img src="assets/sandro-cut-out.png" alt="Sandro headshot" />
+        <img src="assets/me.png" alt="" />
       </div>
       <div className="flex-grow-1 align-self-center ml-4">
         <h1
           className={`${isTabletOrGreater ? "text-8xl" : "text-7xl"} mb-1 mt-0`}
         >
-          Hi, I'm Sandro
+          Hi, I'm Sandro :)
         </h1>
         <h2 className="text-3xl mt-1 mb-0 font-semibold">
           {isTabletOrGreater
